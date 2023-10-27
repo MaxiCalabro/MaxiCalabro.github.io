@@ -8,7 +8,6 @@ import { View1Component } from './views/view1/view1.component';
 import { View2Component } from './views/view2/view2.component';
 import { View3Component } from './views/view3/view3.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { NgxMaskDirective, NgxMaskPipe, provideEnvironmentNgxMask, provideNgxMask } from "ngx-mask";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnswerModalComponent } from './views/view1/answer-modal/answer-modal.component';
 import { MatDialogModule } from "@angular/material/dialog";
@@ -31,8 +30,6 @@ import {IgxGridComponent} from "igniteui-angular";
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    NgxMaskDirective,
-    NgxMaskPipe,
     BrowserAnimationsModule,
     MatDialogModule,
     MatButtonModule,
@@ -43,8 +40,6 @@ import {IgxGridComponent} from "igniteui-angular";
     IgxGridComponent
   ],
   providers: [
-    provideNgxMask(),
-    provideEnvironmentNgxMask()
   ],
   bootstrap: [AppComponent]
 })
