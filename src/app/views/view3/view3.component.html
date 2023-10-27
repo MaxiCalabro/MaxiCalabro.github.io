@@ -1,0 +1,50 @@
+<p>CHECKBOX</p>
+<hr>
+<mat-radio-group class="checkbox-container">
+  <mat-radio-button value="1" [checked]="openForm() == 1" (change)="openForm.set(1)">Form 1</mat-radio-button>
+  <mat-radio-button value="2" [checked]="openForm() == 2" (change)="openForm.set(2)">Form 2</mat-radio-button>
+  <mat-radio-button value="3" [checked]="openForm() == 3" (change)="openForm.set(3)">Form 3</mat-radio-button>
+</mat-radio-group>
+
+<hr>
+
+<div class="forms-container">
+  <div class="form" *ngIf="openForm() === 1">
+    <p>Form 1</p>
+    <form [formGroup]="formTest1">
+      <mat-form-field appearance="outline" >
+        <input name="firstName" matInput placeholder="First Name" formControlName="firstName">
+      </mat-form-field>
+      <mat-form-field appearance="outline" >
+        <input name="lastName" matInput placeholder="Last Name" formControlName="lastName">
+      </mat-form-field>
+    </form>
+  </div>
+
+  <div class="form" *ngIf="openForm() === 2">
+    <p>Form 2</p>
+    <form [formGroup]="formTest2">
+      <mat-form-field appearance="outline" >
+        <input name="country" matInput placeholder="Country" formControlName="country">
+      </mat-form-field>
+      <mat-form-field appearance="outline" >
+        <input name="city" matInput placeholder="City" formControlName="city">
+      </mat-form-field>
+    </form>
+  </div>
+
+  <div class="form" *ngIf="openForm() === 3">
+    <p>Form 3</p>
+    <form [formGroup]="formTest3">
+      <mat-form-field appearance="outline" >
+        <input name="birthDay" matInput placeholder="Birth Day" formControlName="birthDay">
+      </mat-form-field>
+      <mat-form-field appearance="outline" >
+        <input name="birthMonth" matInput placeholder="Birth Month" formControlName="birthMonth">
+      </mat-form-field>
+      <mat-form-field appearance="outline" >
+        <input name="birthYear" matInput placeholder="Birth Year" formControlName="birthYear">
+      </mat-form-field>
+    </form>
+  </div>
+</div>

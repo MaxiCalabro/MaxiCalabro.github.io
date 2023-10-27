@@ -1,0 +1,15 @@
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.forms-container {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  .form {
+    max-width: 300px;
+  }
+}

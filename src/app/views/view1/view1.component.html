@@ -1,0 +1,35 @@
+<p>FORMULARY</p>
+<hr>
+<form class="form-container" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+      <mat-label>First Name:</mat-label>
+      <input matInput id="firstName" formControlName="firstName">
+    <mat-error>Required</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Last Name:</mat-label>
+    <input matInput id="lastName" formControlName="lastName">
+    <mat-error>Required</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Phone Number:</mat-label>
+    <input matInput id="phoneNumber" formControlName="phoneNumber">
+    <mat-error>Required</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Location:</mat-label>
+    <input matInput id="location" formControlName="location">
+    <mat-error>Required</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>ID:</mat-label>
+    <input matInput id="id" formControlName="id">
+    <mat-error>Required</mat-error>
+  </mat-form-field>
+
+  <button type="submit" mat-raised-button color="accent">SEND</button>
+</form>

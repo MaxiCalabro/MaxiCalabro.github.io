@@ -1,0 +1,21 @@
+<div class="modal-container">
+  <div class="title">
+    <h1>Answers from View1</h1>
+  </div>
+  <hr>
+  <div mat-dialog-content>
+    <h3>First Name</h3>
+    <p>{{data.firstName}}</p>
+    <h3>Last Name</h3>
+    <p>{{data.lastName}}</p>
+    <h3>Phone Number</h3>
+    <p>{{data.phoneNumber}}</p>
+    <h3>Location</h3>
+    <p>{{data.location}}</p>
+    <h3>ID</h3>
+    <p>{{data.id}}</p>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button color="accent" (click)="close()">Close</button>
+  </div>
+</div>

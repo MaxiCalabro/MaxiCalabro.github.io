@@ -1,0 +1,28 @@
+.modal-container {
+}
+.title {
+  background-color: #2a9d8f;
+}
+
+h1 {
+  text-align: center;
+  color: #e9c46a !important;
+  margin: 0;
+}
+h3 {
+  color: #000000;
+  font-size: 20px;
+  margin-top: 5px !important;
+}
+p {
+  color: #323232;
+  margin: 0;
+}
+
+.mat-mdc-dialog-actions {
+  justify-content: end;
+}
+
+@media screen and (max-width: 800px) {
+
+}
